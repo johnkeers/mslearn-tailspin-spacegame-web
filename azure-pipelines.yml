@@ -18,7 +18,7 @@ steps:
   inputs:
     packageType: 'sdk'
     version: '8.x' # Specify the .NET Core SDK version you want to use
-	
+
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
