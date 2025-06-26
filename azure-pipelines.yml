@@ -19,6 +19,11 @@ steps:
     packageType: 'sdk'
     version: '8.x' # Specify the .NET Core SDK version you want to use
 
+- task: NodeTool@0
+  displayName: 'Install Node.js 18.x'
+  inputs:
+    versionSpec: '18.x'
+
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
